@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.box-container{
+  display: flex;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  background: rgba(255, 255, 0, 0.7);
+  transition: 1s 
+  /* 해당 엘리먼트 요소의 수치적인 프로퍼티의 변환에 부드러움 즉, 애니메이션을 적용시켜준다
+    세부 요소
+    transition: 1s 로 설정했을 때 아래와 같은 default 가 들어간다.
+
+    transition-property: all; 어떤 요소에 애니메이션을 적용할 건지
+    transition-duration: 1s; 얼마의 시간동안 재생할 건지
+    transition-timing-function: ease; 애니메이션의 수치 변화 속도 ex) cubic-bezier(1,-0.46, 0, 2.33) 이런식으로 개발자 도구에서 커스텀이 가능하다 (키워드도 있음!!)
+    transition-delay: 0s; 말 그대로 딜레이를 넣어준다
+}
+  */
+}
+
+.box:hover {
+  /* transform: scale(2) rotate(45deg);  스케일 크기 변경하기*/
+  /* transform: skewX(45deg) skewY(45deg) 비틀기 */
+  /* transform: translate(30px, 10px);  이동하기*/
+  /* transform: translateX(30px) translateY(-30px); */
+  /* transform: scale(2); 기준점 변경하기 */
+  /* transform-origin: left top; 기준점 변경하기
+  transform-origin: 0% 0%; 기준점 변경하기 (왼쪽 위로 기준점을 잡아준다)*/
+
+  transform: scale(2);
+}
